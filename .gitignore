@@ -1,0 +1,8 @@
+*.key
+*.json
+*.zip
+*.exe
+*.dll
+*.txt
+script-server/
+teste/

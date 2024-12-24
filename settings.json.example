@@ -1,0 +1,7 @@
+{
+  "vm_user": "user",
+  "vm_ip": "ip",
+  "key_path": "key_path",
+  "server_path": "server/path",
+  "java_command": "java -Xmx16G -Xms16G -jar server.jar nogui" // command for run server with 16GB of ram
+}
