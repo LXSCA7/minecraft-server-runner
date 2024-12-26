@@ -16,6 +16,7 @@ const (
 )
 
 var serverRunning = server.CheckServerInstance()
+var version = "development"
 
 type Config struct {
 	VMUser      string `json:"vm_user"`
@@ -40,6 +41,11 @@ func main() {
 
 		if args[1] == "help" {
 			utils.Help()
+			os.Exit(0)
+		}
+
+		if args[1] == "version" {
+			fmt.Println("Versão: " + version)
 			os.Exit(0)
 		}
 	}

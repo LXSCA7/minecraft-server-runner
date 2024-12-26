@@ -25,5 +25,6 @@ func Help() {
 	fmt.Println("Opções:")
 	fmt.Println("start - Inicia o servidor")
 	fmt.Println("stop - Para o servidor")
+	fmt.Println("version - Exibe a versão do script")
 	fmt.Println("help - Exibe esta mensagem")
 }
