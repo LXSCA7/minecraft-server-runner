@@ -19,3 +19,11 @@ func printServerStatus(serverRunning bool) {
 		fmt.Println("STATUS DO SERVIDOR:", Red, "OFFLINE", Reset)
 	}
 }
+
+func Help() {
+	fmt.Println("Uso: ./script-server [opção]")
+	fmt.Println("Opções:")
+	fmt.Println("start - Inicia o servidor")
+	fmt.Println("stop - Para o servidor")
+	fmt.Println("help - Exibe esta mensagem")
+}

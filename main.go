@@ -26,6 +26,24 @@ type Config struct {
 }
 
 func main() {
+	args := os.Args
+	if len(args) > 1 {
+		if args[1] == "start" {
+			server.StartServer()
+			os.Exit(0)
+		}
+
+		if args[1] == "stop" {
+			server.StopServer()
+			os.Exit(0)
+		}
+
+		if args[1] == "help" {
+			utils.Help()
+			os.Exit(0)
+		}
+	}
+
 	serverRunning = server.CheckServerInstance()
 	var option int
 	for {
