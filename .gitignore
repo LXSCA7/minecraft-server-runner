@@ -6,3 +6,5 @@
 *.txt
 script-server/
 teste/
+Makefile
+deploy/
