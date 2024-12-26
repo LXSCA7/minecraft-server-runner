@@ -7,24 +7,8 @@ import (
 	"script-server/utils"
 )
 
-// Códigos ANSI para cores
-const (
-	Reset  = "\033[0m"
-	Red    = "\033[31m"
-	Green  = "\033[32m"
-	Yellow = "\033[33m"
-)
-
 var serverRunning = server.CheckServerInstance()
 var version = "development"
-
-type Config struct {
-	VMUser      string `json:"vm_user"`
-	VMIP        string `json:"vm_ip"`
-	KeyPath     string `json:"key_path"`
-	ServerPath  string `json:"server_path"`
-	JavaCommand string `json:"java_command"`
-}
 
 func main() {
 	args := os.Args
